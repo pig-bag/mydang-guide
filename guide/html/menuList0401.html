@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>- MENULIST | WINSUIPubGuide -</title>
+  <link rel="stylesheet" type="text/css" href="../com/css/guide.css" />
+  <link rel="stylesheet" type="text/css" href="../com/css/reset.css" />
+  <script type="text/javascript" src="../../comjs/jquery-1.10.2.min.js"></script>
+  <script type="text/javascript" src="../../comjs/jquery.easing.1.3.js"></script>
+  <script type="text/javascript" src="../com/js/d_jquery.js"></script>
+  <script type="text/javascript" src="../com/js/d_menu.js"></script>
+</head>
+
+<body>
+
+  <div title="스킵메뉴" class="skipMenu">
+    <a href="http://kam8358.host.whoisweb.net/front/html/kam/wgHeader">주 메뉴 바로가기</a>
+    <a href="http://kam8358.host.whoisweb.net/front/html/kam/wgContainer">본문 내용 바로가기</a>
+  </div>
+  <hr />
+  <div id="wrapGuide">
+    <!-- HEADER s -->
+    <script type="text/javascript">
+      TopArea();
+      gnbBox_init(2);
+    </script><!-- HEADER e //-->
+    <hr />
+    <div id="wgContainer" class="layout2 clfix">
+      <!-- LNB s -->
+      <script type="text/javascript">
+        LeftMenuRULE()
+        lnb_menu('1', '1');
+      </script><!-- LNB e //-->
+      <div id="wgContent" class="clfix">
+        <div class="titArea">
+          <h1>명당</h1>
+          <!--<p><script type="text/javascript">map.print(1,1,1);</script></p> -->
+        </div>
+        <div id="g_container">
+          <p class="status"><strong>진행현황안내</strong> ( <span class="txt_ing">초록-작업중</span> | <span
+              class="txt_ok">빨강-완료</span> | <span class="txt_mod">파랑-수정</span> ) | <strong>CHECK</strong> (V -
+            validate | C - cross browing | W - WA | R - Responsive)</p>
+          <div id="g_content">
+            <table id="focus" class="mlist">
+              <!-- <colgroup>
+                <col width="7%" />
+                <col width="10%" />
+                <col width="10%" />
+                <col width="10%" />
+                <col width="7%" />
+                <col width="7%" />
+                <col width="7%" />
+                <col width="7%" />
+                <col width="6%" />
+                <col width="15%" />
+                <col width="7%" />
+                <col width="5%" />
+                <col width="5%" />
+              </colgroup> -->
+              <thead>
+                <tr>
+                  <th scope="col" class="first"></th>
+                  <th scope="col">1Depth</th>
+                  <th scope="col">2Depth</th>
+                  <th scope="col">3Depth</th>
+                  <th scope="col">4Depth</th>
+                  <th scope="col">5Depth</th>
+                  <th scope="col">6Depth</th>
+                  <th scope="col">Popup</th>
+                  <th scope="col">CHECK</th>
+                  <th scope="col">비고</th>
+                  <th scope="col">화면ID</th>
+                  <th scope="col">Folder</th>
+                  <th scope="col">LINK</th>
+                  <th scope="col">구분</th>
+                  <th scope="col">M구분</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td data-th=""></td>
+                  <td class="itemtit02" date th="1Deptd">Main Page</td>
+                  <td class="blankBL" date th="2Deptd"></td>
+                  <td class="blankBL" date th="3Deptd"></td>
+                  <td class="blankBL" date th="4Deptd"></td>
+                  <td class="blankBL" date th="5Deptd"></td>
+                  <td class="blankBL" date th="6Deptd"></td>
+                  <td date th="Popup"></td>
+                  <td date th="CHECK"></td>
+                  <td date th="비고"></td>
+                  <td date th="화면ID">id_00</td>
+                  <td date th="Folder"></td>
+                  <td date th="LINK"></td>
+                  <td class="txt_ok" date th="구분">완료</td>
+                  <td class="txt_ok" date th="구분">완료</td>
+                </tr>
+                <tr>
+                  <td colspan="15" class="borS"></td>
+                </tr>
+                <tr>
+                  <td data-th="">헤더</td>
+                  <td date th="1Deptd">로고</td>
+                  <td date th="2Deptd"></td>
+                  <td date th="3Deptd"></td>
+                  <td date th="4Deptd"></td>
+                  <td date th="5Deptd"></td>
+                  <td date th="6Deptd"></td>
+                  <td date th="Popup"></td>
+                  <td date th="CHECK"></td>
+                  <td date th="비고">메인으로 이동</td>
+                  <td date th="화면ID"></td>
+                  <td date th="Folder"></td>
+                  <td date th="LINK"></td>
+                  <td class="txt_ok" date th="구분">완료</td>
+                  <td class="txt_ok" date th="구분">완료</td>
+                </tr>
+                <tr>
+                  <td colspan="15" class="borB"></td>
+                </tr>
+                <tr>
+                  <td data-th=""></td>
+                  <td date th="1Deptd">찾다</td>
+                  <td date th="2Deptd">지도</td>
+                  <td date th="3Deptd"></td>
+                  <td date th="4Deptd"></td>
+                  <td date th="5Deptd"></td>
+                  <td date th="6Deptd"></td>
+                  <td date th="Popup"></td>
+                  <td date th="CHECK"></td>
+                  <td date th="비고">새창</td>
+                  <td date th="화면ID">sc_01</td>
+                  <td date th="Folder"></td>
+                  <td date th="LINK">https://mydang.kr/main/search</td>
+                  <td class="txt_ok" date th="구분">완료</td>
+                  <td class="txt_ok" date th="구분">완료</td>
+                </tr>
+                <tr>
+                  <td data-th="">&nbsp;</td>
+                  <td date th="1Deptd"></td>
+                  <td date th="2Deptd">검색-매물리스트</td>
+                  <td date th="3Deptd"></td>
+                  <td date th="4Deptd"></td>
+                  <td date th="5Deptd"></td>
+                  <td date th="6Deptd"></td>
+                  <td date th="Popup"></td>
+                  <td date th="CHECK"></td>
+                  <td date th="비고">페이지내이동</td>
+                  <td date th="화면ID">sc_01.1</td>
+                  <td date th="Folder"></td>
+                  <td date th="LINK"></td>
+                  <td class="txt_ok" date th="구분">완료</td>
+                  <td class="txt_ok" date th="구분">완료</td>
+                </tr>
+                <tr>
+                  <td data-th="">&nbsp;</td>
+                  <td date th="1Deptd"></td>
+                  <td date th="2Deptd">매물상세</td>
+                  <td date th="3Deptd"></td>
+                  <td date th="4Deptd"></td>
+                  <td date th="5Deptd"></td>
+                  <td date th="6Deptd"></td>
+                  <td date th="Popup"></td>
+                  <td date th="CHECK"></td>
+                  <td date th="비고">페이지내이동</td>
+                  <td date th="화면ID">sc_01.1.1</td>
+                  <td date th="Folder"></td>
+                  <td date th="LINK"></td>
+                  <td class="txt_ok" date th="구분">완료</td>
+                  <td class="txt_ok" date th="구분">완료</td>
+                </tr>
+                <tr>
+                  <td data-th="">&nbsp;</td>
+                  <td date th="1Deptd"></td>
+                  <td date th="2Deptd">사진상세</td>
+                  <td date th="3Deptd"></td>
+                  <td date th="4Deptd"></td>
+                  <td date th="5Deptd"></td>
+                  <td date th="6Deptd"></td>
+                  <td date th="Popup"></td>
+                  <td date th="CHECK"></td>
+                  <td date th="비고">페이지내이동</td>
+                  <td date th="화면ID">sc_01.1.1.1</td>
+                  <td date th="Folder"></td>
+                  <td date th="LINK"></td>
+                  <td class="txt_ok" date th="구분">완료</td>
+                  <td class="txt_ok" date th="구분">완료</td>
+                </tr>
+                <tr>
+                  <td colspan="15" class="borB"></td>
+                </tr>
+                <tr>
+                  <td data-th=""></td>
+                  <td date th="1Deptd">짓다</td>
+                  <td date th="2Deptd">지도</td>
+                  <td date th="3Deptd"></td>
+                  <td date th="4Deptd"></td>
+                  <td date th="5Deptd"></td>
+                  <td date th="6Deptd"></td>
+                  <td date th="Popup"></td>
+                  <td date th="CHECK"></td>
+                  <td date th="비고">새창</td>
+                  <td date th="화면ID">sc_02</td>
+                  <td date th="Folder"></td>
+                  <td date th="LINK">https://mydang.kr/main/makeSearch</td>
+                  <td class="txt_ok" date th="구분">완료</td>
+                  <td class="txt_mod" date th="구분">수정</td>
+                </tr>
+                <tr>
+                  <td data-th="">&nbsp;</td>
+                  <td date th="1Deptd"></td>
+                  <td date th="2Deptd">검색-업체리스트</td>
+                  <td date th="3Deptd"></td>
+                  <td date th="4Deptd"></td>
+                  <td date th="5Deptd"></td>
+                  <td date th="6Deptd"></td>
+                  <td date th="Popup"></td>
+                  <td date th="CHECK"></td>
+                  <td date th="비고">페이지내이동</td>
+                  <td date th="화면ID">sc_02.1</td>
+                  <td date th="Folder"></td>
+                  <td date th="LINK"></td>
+                  <td class="txt_mod" date th="구분">수정</td>
+                  <td class="txt_mod" date th="구분">수정</td>
+                </tr>
+                <tr>
+                  <td data-th="">&nbsp;</td>
+                  <td date th="1Deptd"></td>
+                  <td date th="2Deptd">상담</td>
+                  <td date th="3Deptd"></td>
+                  <td date th="4Deptd"></td>
+                  <td date th="5Deptd"></td>
+                  <td date th="6Deptd"></td>
+                  <td date th="Popup">모달</td>
+                  <td date th="CHECK"></td>
+                  <td date th="비고">페이지내이동</td>
+                  <td date th="화면ID">sc_02.*</td>
+                  <td date th="Folder"></td>
+                  <td date th="LINK"></td>
+                  <td class="txt_ok" date th="구분">완료</td>
+                  <td class="txt_ok" date th="구분">완료</td>
+                </tr>
+                <tr>
+                  <td data-th="">&nbsp;</td>
+                  <td date th="1Deptd"></td>
+                  <td date th="2Deptd">업체상세</td>
+                  <td date th="3Deptd"></td>
+                  <td date th="4Deptd"></td>
+                  <td date th="5Deptd"></td>
+                  <td date th="6Deptd"></td>
+                  <td date th="Popup"></td>
+                  <td date th="CHECK"></td>
+                  <td date th="비고">페이지내이동</td>
+                  <td date th="화면ID">sc_02.1.1</td>
+                  <td date th="Folder"></td>
+                  <td date th="LINK"></td>
+                  <td class="txt_mod" date th="구분">수정</td>
+                  <td class="txt_mod" date th="구분">수정</td>
+                </tr>
+                <tr>
+                  <td data-th="">&nbsp;</td>
+                  <td date th="1Deptd"></td>
+                  <td date th="2Deptd">상담</td>
+                  <td date th="3Deptd">사례</td>
+                  <td date th="4Deptd">사례상세</td>
+                  <td date th="5Deptd"></td>
+                  <td date th="6Deptd"></td>
+                  <td date th="Popup">모달</td>
+                  <td date th="CHECK"></td>
+                  <td date th="비고">페이지내이동</td>
+                  <td date th="화면ID">sc_02.*</td>
+                  <td date th="Folder"></td>
+                  <td date th="LINK"></td>
+                  <td class="txt_ok" date th="구분">완료</td>
+                  <td class="txt_ok" date th="구분">완료</td>
+                </tr>
+                <tr>
+                  <td data-th="">&nbsp;</td>
+                  <td date th="1Deptd"></td>
+                  <td date th="2Deptd">사진상세</td>
+                  <td date th="3Deptd"></td>
+                  <td date th="4Deptd"></td>
+                  <td date th="5Deptd"></td>
+                  <td date th="6Deptd"></td>
+                  <td date th="Popup"></td>
+                  <td date th="CHECK"></td>
+                  <td date th="비고">페이지내이동</td>
+                  <td date th="화면ID">sc_02.1.1.1</td>
+                  <td date th="Folder"></td>
+                  <td date th="LINK"></td>
+                  <td class="txt_ok" date th="구분">완료</td>
+                  <td class="txt_ok" date th="구분">완료</td>
+                </tr>
+                <tr>
+                  <td colspan="15" class="borB"></td>
+                </tr>
+                <tr>
+                  <td data-th="">&nbsp;</td>
+                  <td date th="1Deptd">비결</td>
+                  <td date th="2Deptd">창업팁</td>
+                  <td date th="3Deptd">상세</td>
+                  <td date th="4Deptd"></td>
+                  <td date th="5Deptd"></td>
+                  <td date th="6Deptd"></td>
+                  <td date th="Popup"></td>
+                  <td date th="CHECK"></td>
+                  <td date th="비고"></td>
+                  <td date th="화면ID"></td>
+                  <td date th="Folder"></td>
+                  <td date th="LINK">https://mydang.kr/main/StartTip</td>
+                  <td class="txt_ok" date th="구분">완료</td>
+                  <td class="txt_ok" date th="구분">완료</td>
+                </tr>
+                <tr>
+                  <td data-th="">&nbsp;</td>
+                  <td date th="1Deptd"></td>
+                  <td date th="2Deptd">창업과정</td>
+                  <td date th="3Deptd">상세</td>
+                  <td date th="4Deptd"></td>
+                  <td date th="5Deptd"></td>
+                  <td date th="6Deptd"></td>
+                  <td date th="Popup"></td>
+                  <td date th="CHECK"></td>
+                  <td date th="비고"></td>
+                  <td date th="화면ID"></td>
+                  <td date th="Folder"></td>
+                  <td date th="LINK">https://mydang.kr/main/StartPro</td>
+                  <td class="txt_ok" date th="구분">완료</td>
+                  <td class="txt_ok" date th="구분">완료</td>
+                </tr>
+                <tr>
+                  <td data-th="">&nbsp;</td>
+                  <td date th="1Deptd"></td>
+                  <td date th="2Deptd">창업뉴스</td>
+                  <td date th="3Deptd">상세</td>
+                  <td date th="4Deptd"></td>
+                  <td date th="5Deptd"></td>
+                  <td date th="6Deptd"></td>
+                  <td date th="Popup"></td>
+                  <td date th="CHECK"></td>
+                  <td date th="비고"></td>
+                  <td date th="화면ID"></td>
+                  <td date th="Folder"></td>
+                  <td date th="LINK">https://mydang.kr/main/StartNews</td>
+                  <td class="txt_ok" date th="구분">완료</td>
+                  <td class="txt_ok" date th="구분">완료</td>
+                </tr>
+                <tr>
+                  <td colspan="15" class="borB"></td>
+                </tr>
+                <tr>
+                  <td data-th="">&nbsp;</td>
+                  <td date th="1Deptd">사례</td>
+                  <td date th="2Deptd">상세</td>
+                  <td date th="3Deptd"></td>
+                  <td date th="4Deptd"></td>
+                  <td date th="5Deptd"></td>
+                  <td date th="6Deptd"></td>
+                  <td date th="Popup"></td>
+                  <td date th="CHECK"></td>
+                  <td date th="비고">댓글</td>
+                  <td date th="화면ID"></td>
+                  <td date th="Folder"></td>
+                  <td date th="LINK"><https://mydang.kr/main/constrCase/td>
+                  <td class="txt_ok" date th="구분">완료</td>
+                  <td class="txt_ok" date th="구분">완료</td>
+                </tr>
+                <tr>
+                  <td colspan="15" class="borB"></td>
+                </tr>
+                <tr>
+                  <td data-th="">&nbsp;</td>
+                  <td date th="1Deptd">로그인/가입</td>
+                  <td date th="2Deptd">로그인/간편로그인</td>
+                  <td date th="3Deptd"></td>
+                  <td date th="4Deptd"></td>
+                  <td date th="5Deptd"></td>
+                  <td date th="6Deptd"></td>
+                  <td date th="Popup"></td>
+                  <td date th="CHECK"></td>
+                  <td date th="비고"></td>
+                  <td date th="화면ID"></td>
+                  <td date th="Folder"></td>
+                  <td date th="LINK">
+                    https://mydang.kr/main/login</td>
+                  <td class="txt_ok" date th="구분">완료</td>
+                  <td class="txt_ok" date th="구분">완료</td>
+                </tr>
+                <tr>
+                  <td data-th="">&nbsp;</td>
+                  <td date th="1Deptd"></td>
+                  <td date th="2Deptd">아이디찾기<br>비밀번호찾기</td>
+                  <td date th="3Deptd"></td>
+                  <td date th="4Deptd"></td>
+                  <td date th="5Deptd"></td>
+                  <td date th="6Deptd"></td>
+                  <td date th="Popup"></td>
+                  <td date th="CHECK"></td>
+                  <td date th="비고">본인인증</td>
+                  <td date th="화면ID"></td>
+                  <td date th="Folder"></td>
+                  <td date th="LINK">
+                    https://mydang.kr/main/find</td>
+                  <td class="txt_ok" date th="구분">완료</td>
+                  <td class="txt_ok" date th="구분">완료</td>
+                </tr>
+                <tr>
+                  <td data-th="">&nbsp;</td>
+                  <td date th="1Deptd"></td>
+                  <td date th="2Deptd">회원가입</td>
+                  <td date th="3Deptd">약관동의</td>
+                  <td date th="4Deptd"></td>
+                  <td date th="5Deptd"></td>
+                  <td date th="6Deptd"></td>
+                  <td date th="Popup"></td>
+                  <td date th="CHECK"></td>
+                  <td date th="비고"></td>
+                  <td date th="화면ID"></td>
+                  <td date th="Folder"></td>
+                  <td date th="LINK">
+                    https://mydang.kr/main/agree</td>
+                  <td class="txt_ok" date th="구분">완료</td>
+                  <td class="txt_ok" date th="구분">완료</td>
+                </tr>
+                <tr>
+                  <td data-th="">&nbsp;</td>
+                  <td date th="1Deptd"></td>
+                  <td date th="2Deptd"></td>
+                  <td date th="3Deptd"></td>
+                  <td date th="4Deptd">본인인증</td>
+                  <td date th="5Deptd"></td>
+                  <td date th="6Deptd"></td>
+                  <td date th="Popup"></td>
+                  <td date th="CHECK"></td>
+                  <td date th="비고"></td>
+                  <td date th="화면ID"></td>
+                  <td date th="Folder"></td>
+                  <td date th="LINK">
+                    https://mydang.kr/main/join01</td>
+                  <td class="txt_ok" date th="구분">완료</td>
+                  <td class="txt_ok" date th="구분">완료</td>
+                </tr>
+                <tr>
+                  <td data-th="">&nbsp;</td>
+                  <td date th="1Deptd"></td>
+                  <td date th="2Deptd"></td>
+                  <td date th="3Deptd"></td>
+                  <td date th="4Deptd"></td>
+                  <td date th="5Deptd">정보입력</td>
+                  <td date th="6Deptd"></td>
+                  <td date th="Popup"></td>
+                  <td date th="CHECK"></td>
+                  <td date th="비고"></td>
+                  <td date th="화면ID"></td>
+                  <td date th="Folder"></td>
+                  <td date th="LINK">
+                    https://mydang.kr/main/join02</td>
+                  <td class="txt_ok" date th="구분">완료</td>
+                  <td class="txt_ok" date th="구분">완료</td>
+                </tr>
+                <tr>
+                  <td data-th="">&nbsp;</td>
+                  <td date th="1Deptd"></td>
+                  <td date th="2Deptd"></td>
+                  <td date th="3Deptd"></td>
+                  <td date th="4Deptd"></td>
+                  <td date th="5Deptd"></td>
+                  <td date th="6Deptd">가입완료</td>
+                  <td date th="Popup"></td>
+                  <td date th="CHECK"></td>
+                  <td date th="비고"></td>
+                  <td date th="화면ID"></td>
+                  <td date th="Folder"></td>
+                  <td date th="LINK">
+                    https://mydang.kr/main/join03</td>
+                  <td class="txt_ok" date th="구분">완료</td>
+                  <td class="txt_ok" date th="구분">완료</td>
+                </tr>
+                <tr>
+                  <td data-th="">&nbsp;</td>
+                  <td date th="1Deptd"></td>
+                  <td date th="2Deptd">파트너사로그인</td>
+                  <td date th="3Deptd"></td>
+                  <td date th="4Deptd"></td>
+                  <td date th="5Deptd"></td>
+                  <td date th="6Deptd"></td>
+                  <td date th="Popup"></td>
+                  <td date th="CHECK"></td>
+                  <td date th="비고"></td>
+                  <td date th="화면ID"></td>
+                  <td date th="Folder"></td>
+                  <td date th="LINK"></td>
+                  <td class="txt_ok" date th="구분">완료</td>
+                  <td class="txt_ok" date th="구분">완료</td>
+                </tr>
+                <tr>
+                  <td colspan="15" class="borB"></td>
+                </tr>
+                <tr>
+                  <td data-th="">&nbsp;</td>
+                  <td date th="1Deptd">마이페이지</td>
+                  <td date th="2Deptd">정보수정</td>
+                  <td date th="3Deptd"></td>
+                  <td date th="4Deptd"></td>
+                  <td date th="5Deptd"></td>
+                  <td date th="6Deptd"></td>
+                  <td date th="Popup"></td>
+                  <td date th="CHECK"></td>
+                  <td date th="비고">간편로그인연동,해제,회원탈퇴<br>번호수정시본인인증</td>
+                  <td date th="화면ID"></td>
+                  <td date th="Folder"></td>
+                  <td date th="LINK">https://mydang.kr/main/myPage/</td>
+                  <td class="txt_ok" date th="구분">완료</td>
+                  <td class="txt_ok" date th="구분">완료</td>
+                </tr>
+                <tr>
+                  <td data-th="">&nbsp;</td>
+                  <td date th="1Deptd"></td>
+                  <td date th="2Deptd">문의-리스트</td>
+                  <td date th="3Deptd">문의하기</td>
+                  <td date th="4Deptd"></td>
+                  <td date th="5Deptd"></td>
+                  <td date th="6Deptd"></td>
+                  <td date th="Popup"></td>
+                  <td date th="CHECK"></td>
+                  <td date th="비고"></td>
+                  <td date th="화면ID"></td>
+                  <td date th="Folder"></td>
+                  <td date th="LINK">https://mydang.kr/main/qnaList/</td>
+                  <td class="txt_ok" date th="구분">완료</td>
+                  <td class="txt_ok" date th="구분">완료</td>
+                </tr>
+                <tr>
+                  <td data-th="">&nbsp;</td>
+                  <td date th="1Deptd"></td>
+                  <td date th="2Deptd"></td>
+                  <td date th="3Deptd">문의상세</td>
+                  <td date th="4Deptd"></td>
+                  <td date th="5Deptd"></td>
+                  <td date th="6Deptd"></td>
+                  <td date th="Popup"></td>
+                  <td date th="CHECK"></td>
+                  <td date th="비고">수정-문의하기폼과동일</td>
+                  <td date th="화면ID"></td>
+                  <td date th="Folder"></td>
+                  <td date th="LINK"></td>
+                  <td class="txt_ok" date th="구분">완료</td>
+                  <td class="txt_ok" date th="구분">완료</td>
+                </tr>
+                <tr>
+                  <td data-th="">&nbsp;</td>
+                  <td date th="1Deptd">관심목록</td>
+                  <td date th="2Deptd">관심명당</td>
+                  <td date th="3Deptd">찾다-매물-상세</td>
+                  <td date th="4Deptd"></td>
+                  <td date th="5Deptd"></td>
+                  <td date th="6Deptd"></td>
+                  <td date th="Popup"></td>
+                  <td date th="CHECK"></td>
+                  <td date th="비고"></td>
+                  <td date th="화면ID"></td>
+                  <td date th="Folder"></td>
+                  <td date th="LINK">https://mydang.kr/main/myStore</td>
+                  <td class="txt_ok" date th="구분">완료</td>
+                  <td class="txt_ok" date th="구분">완료</td>
+                </tr>
+                <tr>
+                  <td data-th="">&nbsp;</td>
+                  <td date th="1Deptd"></td>
+                  <td date th="2Deptd">관십업체</td>
+                  <td date th="3Deptd">짓다-업체-상세</td>
+                  <td date th="4Deptd"></td>
+                  <td date th="5Deptd"></td>
+                  <td date th="6Deptd"></td>
+                  <td date th="Popup"></td>
+                  <td date th="CHECK"></td>
+                  <td date th="비고"></td>
+                  <td date th="화면ID"></td>
+                  <td date th="Folder"></td>
+                  <td date th="LINK">https://mydang.kr/main/myPartner</td>
+                  <td class="txt_ok" date th="구분">완료</td>
+                  <td class="txt_ok" date th="구분">완료</td>
+                </tr>
+                <tr>
+                  <td data-th="">&nbsp;</td>
+                  <td date th="1Deptd">로그아웃</td>
+                  <td date th="2Deptd"></td>
+                  <td date th="3Deptd"></td>
+                  <td date th="4Deptd"></td>
+                  <td date th="5Deptd"></td>
+                  <td date th="6Deptd"></td>
+                  <td date th="Popup"></td>
+                  <td date th="CHECK"></td>
+                  <td date th="비고"></td>
+                  <td date th="화면ID"></td>
+                  <td date th="Folder"></td>
+                  <td date th="LINK"></td>
+                  <td class="txt_ok" date th="구분">완료</td>
+                  <td class="txt_ok" date th="구분">완료</td>
+                </tr>
+                <tr>
+                  <td colspan="15" class="borB"></td>
+                </tr>
+                <tr>
+                  <td data-th="">&nbsp;</td>
+                  <td date th="1Deptd">매물등록.업체등록</td>
+                  <td date th="2Deptd">파트너사로그인</td>
+                  <td date th="3Deptd"></td>
+                  <td date th="4Deptd"></td>
+                  <td date th="5Deptd"></td>
+                  <td date th="6Deptd"></td>
+                  <td date th="Popup"></td>
+                  <td date th="CHECK"></td>
+                  <td date th="비고"></td>
+                  <td date th="화면ID"></td>
+                  <td date th="Folder"></td>
+                  <td date th="LINK"></td>
+                  <td class="txt_ok" date th="구분">완료</td>
+                  <td class="txt_ok" date th="구분">완료</td>
+                </tr>
+                <tr>
+                  <td data-th="">&nbsp;</td>
+                  <td date th="1Deptd"></td>
+                  <td date th="2Deptd">매물등록</td>
+                  <td date th="3Deptd"></td>
+                  <td date th="4Deptd"></td>
+                  <td date th="5Deptd"></td>
+                  <td date th="6Deptd"></td>
+                  <td date th="Popup"></td>
+                  <td date th="CHECK"></td>
+                  <td date th="비고">일반로그인시</td>
+                  <td date th="화면ID"></td>
+                  <td date th="Folder"></td>
+                  <td date th="LINK"></td>
+                  <td class="txt_ok" date th="구분">완료</td>
+                  <td class="txt_ok" date th="구분">완료</td>
+                </tr>
+                <tr>
+                  <td colspan="15" class="borB"></td>
+                </tr>
+                <tr>
+                  <td data-th="">&nbsp;</td>
+                  <td date th="1Deptd">고객센터</td>
+                  <td date th="2Deptd">공지사항</td>
+                  <td date th="3Deptd">상세</td>
+                  <td date th="4Deptd"></td>
+                  <td date th="5Deptd"></td>
+                  <td date th="6Deptd"></td>
+                  <td date th="Popup"></td>
+                  <td date th="CHECK"></td>
+                  <td date th="비고"></td>
+                  <td date th="화면ID"></td>
+                  <td date th="Folder"></td>
+                  <td date th="LINK"></td>
+                  <td class="txt_ok" date th="구분">완료</td>
+                  <td class="txt_ok" date th="구분">완료</td>
+                </tr>
+                <tr>
+                  <td data-th="">&nbsp;</td>
+                  <td date th="1Deptd"></td>
+                  <td date th="2Deptd">뉴스</td>
+                  <td date th="3Deptd">상세</td>
+                  <td date th="4Deptd"></td>
+                  <td date th="5Deptd"></td>
+                  <td date th="6Deptd"></td>
+                  <td date th="Popup"></td>
+                  <td date th="CHECK"></td>
+                  <td date th="비고"></td>
+                  <td date th="화면ID"></td>
+                  <td date th="Folder"></td>
+                  <td date th="LINK"></td>
+                  <td class="txt_ok" date th="구분">완료</td>
+                  <td class="txt_ok" date th="구분">완료</td>
+                </tr>
+                <tr>
+                  <td data-th="">&nbsp;</td>
+                  <td date th="1Deptd"></td>
+                  <td date th="2Deptd">FAQ</td>
+                  <td date th="3Deptd"></td>
+                  <td date th="4Deptd"></td>
+                  <td date th="5Deptd"></td>
+                  <td date th="6Deptd"></td>
+                  <td date th="Popup"></td>
+                  <td date th="CHECK"></td>
+                  <td date th="비고"></td>
+                  <td date th="화면ID"></td>
+                  <td date th="Folder"></td>
+                  <td date th="LINK"></td>
+                  <td class="txt_ok" date th="구분">완료</td>
+                  <td class="txt_ok" date th="구분">완료</td>
+                </tr>
+                <tr>
+                  <td colspan="15" class="borB"></td>
+                </tr>
+                <tr>
+                  <td data-th="">푸터</td>
+                  <td date th="1Deptd">이용약관</td>
+                  <td date th="2Deptd">약관모음pg</td>
+                  <td date th="3Deptd"></td>
+                  <td date th="4Deptd"></td>
+                  <td date th="5Deptd"></td>
+                  <td date th="6Deptd"></td>
+                  <td date th="Popup"></td>
+                  <td date th="CHECK"></td>
+                  <td date th="비고"></td>
+                  <td date th="화면ID"></td>
+                  <td date th="Folder"></td>
+                  <td date th="LINK"></td>
+                  <td class="txt_ok" date th="구분">완료</td>
+                  <td class="txt_ok" date th="구분">완료</td>
+                </tr>
+                <tr>
+                  <td data-th="">&nbsp;</td>
+                  <td date th="1Deptd">개인정보처리방침</td>
+                  <td date th="2Deptd">약관모음pg</td>
+                  <td date th="3Deptd"></td>
+                  <td date th="4Deptd"></td>
+                  <td date th="5Deptd"></td>
+                  <td date th="6Deptd"></td>
+                  <td date th="Popup"></td>
+                  <td date th="CHECK"></td>
+                  <td date th="비고"></td>
+                  <td date th="화면ID"></td>
+                  <td date th="Folder"></td>
+                  <td date th="LINK"></td>
+                  <td class="txt_ok" date th="구분">완료</td>
+                  <td class="txt_ok" date th="구분">완료</td>
+                </tr>
+                <tr>
+                  <td data-th="">&nbsp;</td>
+                  <td date th="1Deptd">위치기반서비스이용약관</td>
+                  <td date th="2Deptd">약관모음pg</td>
+                  <td date th="3Deptd"></td>
+                  <td date th="4Deptd"></td>
+                  <td date th="5Deptd"></td>
+                  <td date th="6Deptd"></td>
+                  <td date th="Popup"></td>
+                  <td date th="CHECK"></td>
+                  <td date th="비고"></td>
+                  <td date th="화면ID"></td>
+                  <td date th="Folder"></td>
+                  <td date th="LINK"></td>
+                  <td class="txt_ok" date th="구분">완료</td>
+                  <td class="txt_ok" date th="구분">완료</td>
+                </tr>
+                <tr>
+                  <td colspan="15" class="borB"></td>
+                </tr>
+                <tr>
+                  <td data-th=""></td>
+                  <td class="itemtit02" date th="1Deptd">Mobile + 추가페이지</td>
+                  <td class="blankBL" date th="2Deptd"></td>
+                  <td class="blankBL" date th="3Deptd"></td>
+                  <td class="blankBL" date th="4Deptd"></td>
+                  <td class="blankBL" date th="5Deptd"></td>
+                  <td class="blankBL" date th="6Deptd"></td>
+                  <td date th="Popup"></td>
+                  <td date th="CHECK"></td>
+                  <td date th="비고"></td>
+                  <td date th="화면ID"></td>
+                  <td date th="Folder"></td>
+                  <td date th="LINK"></td>
+                  <td class="txt_ok" date th="구분">완료</td>
+                  <td class="txt_ok" date th="구분">완료</td>
+                </tr>
+                <tr>
+                  <td data-th="">메인</td>
+                  <td date th="1Deptd">전체메뉴</td>
+                  <td date th="2Deptd">약관</td>
+                  <td date th="3Deptd">약관모음pg</td>
+                  <td date th="4Deptd"></td>
+                  <td date th="5Deptd"></td>
+                  <td date th="6Deptd"></td>
+                  <td date th="Popup"></td>
+                  <td date th="CHECK"></td>
+                  <td date th="비고"></td>
+                  <td date th="화면ID"></td>
+                  <td date th="Folder"></td>
+                  <td date th="LINK"></td>
+                  <td class="txt_ok" date th="구분">완료</td>
+                  <td class="txt_ok" date th="구분">완료</td>
+                </tr>
+                <tr>
+                  <td data-th="">&nbsp;</td>
+                  <td date th="1Deptd">모바일마이페이지</td>
+                  <td date th="2Deptd"></td>
+                  <td date th="3Deptd"></td>
+                  <td date th="4Deptd"></td>
+                  <td date th="5Deptd"></td>
+                  <td date th="6Deptd"></td>
+                  <td date th="Popup"></td>
+                  <td date th="CHECK"></td>
+                  <td date th="비고"></td>
+                  <td date th="화면ID"></td>
+                  <td date th="Folder"></td>
+                  <td date th="LINK"></td>
+                  <td class="txt_ok" date th="구분">완료</td>
+                  <td class="txt_ok" date th="구분">완료</td>
+                </tr>
+                <tr>
+                  <td data-th="">&nbsp;</td>
+                  <td date th="1Deptd">검색페이지</td>
+                  <td date th="2Deptd"></td>
+                  <td date th="3Deptd"></td>
+                  <td date th="4Deptd"></td>
+                  <td date th="5Deptd"></td>
+                  <td date th="6Deptd"></td>
+                  <td date th="Popup"></td>
+                  <td date th="CHECK"></td>
+                  <td date th="비고"></td>
+                  <td date th="화면ID"></td>
+                  <td date th="Folder"></td>
+                  <td date th="LINK"></td>
+                  <td class="txt_ok" date th="구분">완료</td>
+                  <td class="txt_ok" date th="구분">완료</td>
+                </tr>
+               
+        
+                <tr>
+                  <td data-th="">&nbsp;</td>
+                  <td date th="1Deptd"></td>
+                  <td date th="2Deptd"></td>
+                  <td date th="3Deptd"></td>
+                  <td date th="4Deptd"></td>
+                  <td date th="5Deptd"></td>
+                  <td date th="6Deptd"></td>
+                  <td date th="Popup"></td>
+                  <td date th="CHECK"></td>
+                  <td date th="비고"></td>
+                  <td date th="화면ID"></td>
+                  <td date th="Folder"></td>
+                  <td date th="LINK"></td>
+                  <td class="txt_ok" date th="구분">완료</td>
+                  <td class="txt_ok" date th="구분">완료</td>
+                </tr>
+                <tr>
+                  <td data-th="">&nbsp;</td>
+                  <td date th="1Deptd"></td>
+                  <td date th="2Deptd"></td>
+                  <td date th="3Deptd"></td>
+                  <td date th="4Deptd"></td>
+                  <td date th="5Deptd"></td>
+                  <td date th="6Deptd"></td>
+                  <td date th="Popup"></td>
+                  <td date th="CHECK"></td>
+                  <td date th="비고"></td>
+                  <td date th="화면ID"></td>
+                  <td date th="Folder"></td>
+                  <td date th="LINK"></td>
+                  <td class="txt_ok" date th="구분">완료</td>
+                  <td class="txt_ok" date th="구분">완료</td>
+                </tr>
+                <tr>
+                  <td colspan="15" class="borB"></td>
+                </tr>
+              </tbody>
+            </table>
+            <script type="text/javascript">
+              $(document).ready(function () {
+                $('#focus').tableHover();
+              });
+            </script>
+            <script type="text/javascript">
+              var st1 = new SortableTable(document.getElementById("focus"), ["Number", "String", "String", "String",
+                "String", "String"
+              ]);
+              $(function () {
+                var tds = $("#focus tbody  th:first-child");
+                for (var i = 0; i < tds.length; i++) {
+                  $(tds[i]).html(i + 1);
+                }
+              });
+              $('#focus thead th').click(function () {
+                //alert("a");
+                var tds = $("#focus tbody  th:first-child");
+                for (var i = 0; i < tds.length; i++) {
+                  //alert(tds[i].firstChild.nodeValue);
+                  $(tds[i]).html(i + 1);
+                }
+              });
+            </script>
+          </div>
+          <!--// g_content div -->
+        </div>
+        <!--// g_container div -->
+      </div>
+      <!--// wgContent div -->
+
+    </div>
+    <!--// wgContainer div  -->
+
+  </div>
+  <!--// wrapGuide div -->
+</body>
+
+</html>
